@@ -1,5 +1,5 @@
 # dotvim
-This repository contains my vim configurations.
+This repository contains my .vimrc configurations and plugins.
 
 ## Installation
 ```bash
@@ -8,8 +8,8 @@ git clone https://github.com/maliknaik16/dotvim.git ~/.vim
 
 ```
 
-## Some best vim color schmes
-The following list shows the some of the cool colorschemes to use for Vim:
+## Some best Vim color schemes
+Some best Vim color schemes to use are as follows:
 * gruvbox
 * onehalflight
 * tender
@@ -20,3 +20,4 @@ The following list shows the some of the cool colorschemes to use for Vim:
 
 ## Plugins Used
 * [NERD Tree](https://github.com/preservim/nerdtree)
+
