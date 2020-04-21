@@ -1,6 +1,4 @@
-[submodule "/home/malik/.vim/bundle/colorschemes"]
-	path = /home/malik/.vim/bundle/colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "/home/malik/.vim/bundle/nerdtree"]
 	path = /home/malik/.vim/bundle/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+
