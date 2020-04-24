@@ -27,11 +27,30 @@ cnoremap <leader>nt NERDTree
 " ===== Setters =====
 " ==
 
+" Settings for One Half Light theme
+" ==
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+set t_Co=256
+set cursorline
+colorscheme onehalflight
+let g:airline_theme='onehalfdark'
+
+" ===== End OneHalfLight Settings =====
+" ==
+
+" lightline
+" let g:lightline.colorscheme='onehalfdark'
+
 " Set the dark theme (color: #282828)
-set background=dark
+" set background=light
 
 " Run the editor with 'gruvbox' color scheme
-colorscheme gruvbox
+" colorscheme onehalflight
 
 " Turn off the compatible mode
 set nocompatible
@@ -50,6 +69,9 @@ set autoindent
 
 " Display all the matching files when tab is key pressed
 set wildmenu
+
+" Wrap the file names when the tab key is pressed
+set wildmode=list:longest
 
 " Set the tab spacing to 4
 set tabstop=4

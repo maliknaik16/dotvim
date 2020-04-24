@@ -17,15 +17,17 @@ let g:colors_name="onehalflight"
 let colors_name="onehalflight"
 
 
+let s:black       = { "gui": "#383a42", "cterm": "237" }
 let s:red         = { "gui": "#e45649", "cterm": "167" }
 let s:green       = { "gui": "#50a14f", "cterm": "71" }
 let s:yellow      = { "gui": "#c18401", "cterm": "136" }
 let s:blue        = { "gui": "#0184bc", "cterm": "31" }
 let s:purple      = { "gui": "#a626a4", "cterm": "127" }
 let s:cyan        = { "gui": "#0997b3", "cterm": "31" }
+let s:white       = { "gui": "#fafafa", "cterm": "231" }
 
-let s:fg          = { "gui": "#383a42", "cterm": "237" }
-let s:bg          = { "gui": "#fafafa", "cterm": "231" }
+let s:fg          = s:black
+let s:bg          = s:white
 
 let s:comment_fg  = { "gui": "#a0a1a7", "cterm": "247" }
 let s:gutter_bg   = { "gui": "#fafafa", "cterm": "231" }
@@ -192,4 +194,27 @@ hi link gitcommitSelected gitcommitComment
 hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
+" }
+
+" Fix colors in neovim terminal buffers {
+  if has('nvim')
+    let g:terminal_color_0 = s:black.gui
+    let g:terminal_color_1 = s:red.gui
+    let g:terminal_color_2 = s:green.gui
+    let g:terminal_color_3 = s:yellow.gui
+    let g:terminal_color_4 = s:blue.gui
+    let g:terminal_color_5 = s:purple.gui
+    let g:terminal_color_6 = s:cyan.gui
+    let g:terminal_color_7 = s:white.gui
+    let g:terminal_color_8 = s:black.gui
+    let g:terminal_color_9 = s:red.gui
+    let g:terminal_color_10 = s:green.gui
+    let g:terminal_color_11 = s:yellow.gui
+    let g:terminal_color_12 = s:blue.gui
+    let g:terminal_color_13 = s:purple.gui
+    let g:terminal_color_14 = s:cyan.gui
+    let g:terminal_color_15 = s:white.gui
+    let g:terminal_color_background = s:bg.gui
+    let g:terminal_color_foreground = s:fg.gui
+  endif
 " }
