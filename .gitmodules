@@ -1,4 +1,12 @@
 [submodule "/home/malik/.vim/bundle/nerdtree"]
 	path = /home/malik/.vim/bundle/nerdtree
 	url = https://github.com/preservim/nerdtree.git
-
+[submodule "bundle/multiple-cursors"]
+	path = bundle/multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "bundle/lightline"]
+	path = bundle/lightline
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
