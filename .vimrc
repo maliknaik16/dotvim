@@ -5,8 +5,10 @@ filetype plugin indent on
 
 let mapleader = " "
 
-" ===== Key Mappings =====
-" ==
+"""""""""""""""""""""""""""""""""""""""""
+"" Key Mappings
+"""""""""""""""""""""""""""""""""""""""""
+
 " Mapping the <Esc> key to the 'jj' in insert and command modes.
 inoremap jj <Esc>
 cnoremap jj <Esc>
@@ -22,35 +24,31 @@ nnoremap <leader>nh :nohl<CR>
 " Map the NERDTree command to nt
 cnoremap <leader>nt NERDTree
 
-" ===== End Key Mappings =====
+"""""""""""""""""""""""""""""""""""""""""
+"" End Key Mappings
+"""""""""""""""""""""""""""""""""""""""""
 
-" ===== Setters =====
-" ==
+"""""""""""""""""""""""""""""""""""""""""
+"" Setters
+"""""""""""""""""""""""""""""""""""""""""
 
-" Settings for One Half Light theme
-" ==
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
+"""""""""""""""""""""""""""""""""""""""""
+"" Settings for One Half Light theme
+"""""""""""""""""""""""""""""""""""""""""
 
-set t_Co=256
-set cursorline
-colorscheme onehalflight
-let g:airline_theme='onehalfdark'
-
-" ===== End OneHalfLight Settings =====
-" ==
-
-" lightline
-" let g:lightline.colorscheme='onehalfdark'
-
-" Set the dark theme (color: #282828)
-" set background=light
-
-" Run the editor with 'gruvbox' color scheme
+" if exists('+termguicolors')
+"   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"   set termguicolors
+" endif
+" set t_Co=256
+" set cursorline
 " colorscheme onehalflight
+" let g:airline_theme='onehalfdark'
+
+"""""""""""""""""""""""""""""""""""""""""
+" End OneHalfLight Settings
+"""""""""""""""""""""""""""""""""""""""""
 
 " Turn off the compatible mode
 set nocompatible
@@ -86,14 +84,32 @@ set expandtab
 set laststatus=2
 
 " Enable the relative number
-set norelativenumber
+set relativenumber
 
-" ===== End Setters =====
+"""""""""""""""""""""""""""""""""""""""""
+"" End Setters
+"""""""""""""""""""""""""""""""""""""""""
 
-" ===== Autocmd =====
-" ==
+"""""""""""""""""""""""""""""""""""""""""
+"" Autocmd
+"""""""""""""""""""""""""""""""""""""""""
 
 " Trims all the trailing spaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" ===== End Autocmd =====
+"""""""""""""""""""""""""""""""""""""""""
+"" End Autocmd
+"""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""
+"" Ayu Color scheme settings.
+"""""""""""""""""""""""""""""""""""""""""
+
+set termguicolors     " enable true colors support
+let ayucolor="light"  " for light version of theme
+colorscheme ayu
+
+"""""""""""""""""""""""""""""""""""""""""
+"" End Color scheme settings.
+"""""""""""""""""""""""""""""""""""""""""
+

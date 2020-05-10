@@ -14,3 +14,6 @@
 	path = bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
 
+[submodule "bundle/ayu"]
+	path = bundle/ayu
+	url = https://github.com/ayu-theme/ayu-vim.git
