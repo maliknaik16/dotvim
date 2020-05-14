@@ -19,7 +19,8 @@ nnoremap <leader>rv :source $MYVIMRC<CR>
 " Map the <leader>nh to disabling highlighting
 nnoremap <leader>nh :nohl<CR>
 
-" Remapping the tab commands
+" Use Ctrl+O to toggle NerdTree
+map <C-o> :NERDTreeToggle<CR>
 
 " Map the NERDTree command to nt
 cnoremap <leader>nt NERDTree

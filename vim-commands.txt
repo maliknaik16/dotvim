@@ -1,0 +1,38 @@
+
+i 	- Insert text before the cursor
+a 	- Insert text after the cursor
+dd 	- Deletes the line
+I	- Moves the cursor to the front of the line
+A	- Moves the cursor to the end of the line
+
+:w	- Write to file
+:q	- Quit
+:wq	- Write and quit
+:q!	- Quit without saving
+
+
+v	- Enter visual mode
+V	- Enter visual mode with entire line highlighed
+p	- Paste after the cursor
+P	- Paster before the cursor
+y	- Copy the selected text in the editor (think "yank")
+yy	- Yank(Copy) the entire line
+u	- Undo
+Ctrl+p	- Redo
+
+j	- Down
+k	- Up
+h	- Left
+l	- Right
+
+w	- Moves cursor to the beginning of the next word
+W	- Moves cursor to the beginning of the next word(space separated)
+b	- Moves cursor back to the beginning of the previous word
+B 	- Moves cursor back to the beginning of the previous word (space separated)
+e	- Moves cursor to the end of the current word
+E	- Moves cursor to the end of the current word (space separted)
+
+f[char]	- Moves the cursor to the first occurrence of the [char] on the line
+t[char] - Move the cursor right before the first occurrence of the [char] on the line
+;	- Moves the cursor to the next occurrence of the [char]
+,	- Moves the cursor to the next occurrence of the [char]
